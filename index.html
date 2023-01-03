@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script src="script.js"></script>
+    <style>
+        h1 {
+            color:rgb(84, 32, 133)
+        }
+        body {
+            color: black;
+            font-family: Arial;
+        }
+
+        table {
+            border: solid black;
+            text-align: center;
+        }
+
+        div {
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+            font-size: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <body onload = "initialize();">
+    <h1>Dice Roll</h1>
+		<p>
+			<form id = "inputform">Number of Dice to Roll (1, 2, 3): <input name = "nDice" type = "text">
+                <br>
+                Number of Times To Roll The Dice: <input name = "nRolls" type = "text">
+			</form>
+      <br>
+			<button onclick = "evaluateRoll();">Submit</button>
+      <br>
+		</p>
+		
+		<table id = "frequencytable">
+			<tr>
+				<th>Nums</th>
+				<th>Frequencies</th>
+			</tr>
+		</table>
+<br>
+        <table id = "dicetable">
+			<tr id = "dicetableheader">
+				<th>Mean</th>
+				<th>Mode</th>
+				<th>Median</th>
+			</tr>
+		</table>
+
+	</body>
+</body>
+</html>
